@@ -12,6 +12,10 @@
 		7E56129A210C56B30028A1BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E561298210C56B30028A1BF /* Main.storyboard */; };
 		7E56129C210C56B40028A1BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E56129B210C56B40028A1BF /* Assets.xcassets */; };
 		7E56129F210C56B40028A1BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E56129D210C56B40028A1BF /* LaunchScreen.storyboard */; };
+		7EE9522D211146E2009D12F5 /* ViewControllerKakudai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE9522C211146E2009D12F5 /* ViewControllerKakudai.swift */; };
+		7EE9522F211152AB009D12F5 /* スクリーンショット 2018-07-28 18.30.54.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE9522E211152AB009D12F5 /* スクリーンショット 2018-07-28 18.30.54.png */; };
+		7EE95231211152BC009D12F5 /* スクリーンショット 2018-07-28 18.31.59.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE95230211152BC009D12F5 /* スクリーンショット 2018-07-28 18.31.59.png */; };
+		7EE95233211152C5009D12F5 /* スクリーンショット 2018-07-28 18.30.34.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE95232211152C4009D12F5 /* スクリーンショット 2018-07-28 18.30.34.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		7E56129B210C56B40028A1BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E56129E210C56B40028A1BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E5612A0210C56B40028A1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EE9522C211146E2009D12F5 /* ViewControllerKakudai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerKakudai.swift; sourceTree = "<group>"; };
+		7EE9522E211152AB009D12F5 /* スクリーンショット 2018-07-28 18.30.54.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2018-07-28 18.30.54.png"; path = "SlideshowApp/Assets.xcassets/kisenosato.imageset/スクリーンショット 2018-07-28 18.30.54.png"; sourceTree = "<group>"; };
+		7EE95230211152BC009D12F5 /* スクリーンショット 2018-07-28 18.31.59.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2018-07-28 18.31.59.png"; path = "SlideshowApp/Assets.xcassets/mitakeumi.imageset/スクリーンショット 2018-07-28 18.31.59.png"; sourceTree = "<group>"; };
+		7EE95232211152C4009D12F5 /* スクリーンショット 2018-07-28 18.30.34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2018-07-28 18.30.34.png"; path = "SlideshowApp/Assets.xcassets/takanohana.imageset/スクリーンショット 2018-07-28 18.30.34.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,9 @@
 			children = (
 				7E561293210C56B30028A1BF /* SlideshowApp */,
 				7E561292210C56B30028A1BF /* Products */,
+				7EE9522E211152AB009D12F5 /* スクリーンショット 2018-07-28 18.30.54.png */,
+				7EE95230211152BC009D12F5 /* スクリーンショット 2018-07-28 18.31.59.png */,
+				7EE95232211152C4009D12F5 /* スクリーンショット 2018-07-28 18.30.34.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,8 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				7E561294210C56B30028A1BF /* AppDelegate.swift */,
-				7E561296210C56B30028A1BF /* ViewController.swift */,
 				7E561298210C56B30028A1BF /* Main.storyboard */,
+				7EE9522C211146E2009D12F5 /* ViewControllerKakudai.swift */,
+				7E561296210C56B30028A1BF /* ViewController.swift */,
 				7E56129B210C56B40028A1BF /* Assets.xcassets */,
 				7E56129D210C56B40028A1BF /* LaunchScreen.storyboard */,
 				7E5612A0210C56B40028A1BF /* Info.plist */,
@@ -125,6 +137,9 @@
 				7E56129F210C56B40028A1BF /* LaunchScreen.storyboard in Resources */,
 				7E56129C210C56B40028A1BF /* Assets.xcassets in Resources */,
 				7E56129A210C56B30028A1BF /* Main.storyboard in Resources */,
+				7EE95233211152C5009D12F5 /* スクリーンショット 2018-07-28 18.30.34.png in Resources */,
+				7EE9522F211152AB009D12F5 /* スクリーンショット 2018-07-28 18.30.54.png in Resources */,
+				7EE95231211152BC009D12F5 /* スクリーンショット 2018-07-28 18.31.59.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EE9522D211146E2009D12F5 /* ViewControllerKakudai.swift in Sources */,
 				7E561297210C56B30028A1BF /* ViewController.swift in Sources */,
 				7E561295210C56B30028A1BF /* AppDelegate.swift in Sources */,
 			);
