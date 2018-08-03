@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var slideImage: UIImageView!
+    @IBOutlet weak var susumuButton: UIButton!
+    @IBOutlet weak var modoruButton: UIButton!
     @IBOutlet weak var saiseiteishiButton: UIButton!
     var timer : Timer!
     var dispImageNo = 0
@@ -35,11 +37,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var imageName:String = ""
         // segueから遷移先のViewControllerKakudaiを取得する
-        let ViewControllerKakudai:ViewControllerKakudai = segue.destination as! ViewControllerKakudai
+        let viewControllerKakudai:ViewControllerKakudai = segue.destination as! ViewControllerKakudai
         // 遷移先のViewControllerKakudaiで宣言しているimageKakudaiに値を代入して渡す
-        ViewControllerKakudai.imageName = imageNameArray[dispImageNo]
+        viewControllerKakudai.imageName = imageNameArray[dispImageNo]
+        //タイマー停止
+        if self.timer != nil {
+        self.timer.invalidate()
+        self.timer = nil
+        //戻る・進むボタン　タップ有効
+        susumuButton.isEnabled = true
+        modoruButton.isEnabled = true
+        // 再生ボタン名　切り替え
+        saiseiteishiButton.setTitle("再生", for:UIControlState.normal)
+        }
     }
     
     func displayImage() {
@@ -82,14 +93,19 @@ class ViewController: UIViewController {
         if self.timer == nil {
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
             //戻る・進むボタン　タップ不可
-            saiseiteishiButton.isEnabled = false
+            susumuButton.isEnabled = false
+            modoruButton.isEnabled = false
             // 停止ボタン名　切り替え
+            saiseiteishiButton.setTitle("停止", for:UIControlState.normal)
         } else {
             //タイマー停止
             self.timer.invalidate()
+            self.timer = nil
             //戻る・進むボタン　タップ有効
-            saiseiteishiButton.isEnabled = true
+            susumuButton.isEnabled = true
+            modoruButton.isEnabled = true
             // 再生ボタン名　切り替え
+            saiseiteishiButton.setTitle("再生", for:UIControlState.normal)
         }
     }
     @IBAction func unwind(_ segue: UIStoryboardSegue) {

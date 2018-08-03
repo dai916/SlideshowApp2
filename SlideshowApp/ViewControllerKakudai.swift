@@ -12,15 +12,12 @@ class ViewControllerKakudai: UIViewController {
     var dispImageNo = ""
     
     @IBOutlet weak var kakudaigazou: UIImageView!
-    @IBAction func modoru(_ sender: Any) {
-        _ = self.navigationController?.popViewController(animated: true)
-    }
-    
-    override func viewDidLoad() {
+  
+        override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let image = UIImage(named: imageName)
-        kakudaigazou.image = image
+        let image2 = UIImage(named: imageName)
+        kakudaigazou.image = image2
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
